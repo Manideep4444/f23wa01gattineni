@@ -12,7 +12,7 @@ router.get('/', function (req, res, next) {
             value=Math.round(Math.random()*4444);
         }     
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('Math.imul() applied to ' + value + ' is ' + Math.imul(2,value));
+        res.write('Math.imul() applied to ' + value + ' is ' + Math.imul(value));
         res.write('<br>Math.log() applied to ' + value + ' is ' + Math.log(value))
         res.write('<br>Math.log10() applied to ' + value + ' is ' + Math.log10(value))
         res.end()
